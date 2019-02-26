@@ -1,0 +1,34 @@
+body{
+
+	background-color: lightblue;
+}
+.mdc-image-list--masonry {
+    display: block;
+}
+.mdc-image-list {
+    flex-wrap: wrap;
+    margin: 0 auto;
+    padding: 0;
+}
+.masonry-image-list {
+    column-count: 5;
+    max-width: 900px;
+}
+
+.masonry-image-list .mdc-image-list__item {
+    margin-bottom: 16px;
+}
+@media only screen and (max-width: 600px) {
+  .masonry-image-list {
+    column-count: 3;
+    max-width: 900px;
+}
+
+}
+@media only screen and (max-width: 300px) {
+  .masonry-image-list {
+    column-count: 2;
+    max-width: 900px;
+}
+
+}
